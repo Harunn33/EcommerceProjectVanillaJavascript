@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Yemek Torbası</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+          <span class="pageTitle">Yemek Torbası</span>
+          </div>
+          <div class="two columns u-pull-right">
+            <ul class="iconBar">
+              <li class="submenu">
+                <span id="img-cart"><i class="bx bx-shopping-bag"></i></span>
+                <div id="shopping-cart">
+                  <table id="cart-content" class="u-full-width">
+                    <thead>
+                      <tr>
+                        <th>Ürün Resmi</th>
+                        <th>Adı</th>
+                        <th>Fiyatı</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+
+                  <a href="#" id="clear-cart" class="button u-full-width"
+                    >Sepeti Temizle</a
+                  >
+                </div>
+              </li>
+              <span onclick="logOut()" class="logout-img"><i class='bx bx-log-out'></i></span>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="six columns">
+            <div class="hero-content">
+              <h2>Acaba Bugün Ne Yesek?</h2>
+              <img src="img/logo.png" alt="" class="logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="courses-list" class="container">
+      <h1 id="heading" class="heading">Yemekler</h1>
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="img/makarna.jpg" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>Makarna</h4>
+              
+              <img src="img/stars.png" />
+              <p class="price">33TL <span class="u-pull-right">28TL</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="1"
+                >Sepete Ekle</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/iskender.jpg" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>İskender</h4>
+              
+              <img src="img/stars.png" />
+              <p class="price">35TL<span class="u-pull-right">30TL</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="2"
+                >Sepete Ekle</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/kebap.jpg" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>Kebap</h4>
+              
+              <img src="img/stars.png" />
+              <p class="price">40TL <span class="u-pull-right">35TL</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="3"
+                >Sepete Ekle</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="img/döner.jpg" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>Döner</h4>
+              
+              <img src="img/stars.png" />
+              <p class="price">30TL <span class="u-pull-right">25TL</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="4"
+                >Sepete Ekle</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/tantuni.jpg" class="course-image u-full-width" />
+            <div class="info-card">
+              <h4>Tantuni</h4>
+              
+              <img src="img/stars.png" />
+              <p class="price">35TL <span class="u-pull-right">23TL</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="5"
+                >Sepete Ekle</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+            <div class="card">
+              <img src="img/tost.jpg" class="course-image u-full-width" />
+              <div class="info-card">
+                <h4>Tost</h4>
+                
+                <img src="img/stars.png" />
+                <p class="price">35TL <span class="u-pull-right">23TL</span></p>
+                <a
+                  href="#"
+                  class="u-full-width button-primary button input add-to-cart"
+                  data-id="5"
+                  >Sepete Ekle</a
+                >
+              </div>
+            </div>
+            <!--.card-->
+          </div>
+          <!--.card-->
+          
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <div class="card">
+              <img src="img/fettucini.jpg" class="course-image u-full-width" />
+              <div class="info-card">
+                <h4>Fettucini</h4>
+                
+                <img src="img/stars.png" />
+                <p class="price">40TL<span class="u-pull-right">27TL</span></p>
+                <a
+                  href="#"
+                  class="u-full-width button-primary button input add-to-cart"
+                  data-id="4"
+                  >Sepete Ekle</a
+                >
+              </div>
+            </div>
+            <!--.card-->
+          </div>
+          <div class="four columns">
+            <div class="card">
+              <img src="img/balık.jpg" class="course-image u-full-width img-height" />
+              <div class="info-card">
+                <h4>Kızarmış Balık</h4>
+                
+                <img src="img/stars.png" />
+                <p class="price">70TL<span class="u-pull-right">63TL</span></p>
+                <a
+                  href="#"
+                  class="u-full-width button-primary button input add-to-cart"
+                  data-id="5"
+                  >Sepete Ekle</a
+                >
+              </div>
+            </div>
+            <!--.card-->
+          </div>
+          <div class="four columns">
+              <div class="card">
+                <img src="img/çorba.jpg" class="course-image u-full-width img-height" />
+                <div class="info-card">
+                  <h4>Çorba</h4>
+                  
+                  <img src="img/stars.png" />
+                  <p class="price">15TL<span class="u-pull-right">10TL</span></p>
+                  <a
+                    href="#"
+                    class="u-full-width button-primary button input add-to-cart"
+                    data-id="5"
+                    >Sepete Ekle</a
+                  >
+                </div>
+              </div>
+              <!--.card-->
+            </div>
+            <!--.card-->
+            
+          </div>
+      </div>
+      <!--.row-->
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

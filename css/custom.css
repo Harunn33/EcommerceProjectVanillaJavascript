@@ -1,0 +1,162 @@
+body {
+    background-color: #fff6f6
+}
+.pageTitle{
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.img-height{
+    height: 220px;
+}
+.four{
+    margin-top: 15px;
+}
+input{
+    color:pink;
+}
+h1 {
+    text-align: center;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+header {
+    padding: 20px 0 0 0;
+    background-color: #ea004b;
+    text-align: center;
+    
+}
+@media (min-width: 750px) {
+    header {
+        text-align: left;
+    }
+}
+.remove {
+    border: 1px solid red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: red;
+}
+.remove:hover{
+    background-color: pink;
+    color: red;
+}
+ul {
+    list-style: none;
+}
+#hero {
+    background-image:url(../img/slider.jpg);
+    height: 350px;
+    background-size: cover;
+}
+#heading {
+    margin: 30px 0;
+}
+.submenu {
+    position: relative;
+}
+
+.submenu #shopping-cart{
+    display: none;
+}
+.submenu:hover #shopping-cart{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.iconBar{
+    display: flex;
+}
+.logout-img{
+    padding-left: 20px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+.logout-img:hover{
+    color: rgba(0, 0, 0, .7);
+}
+#img-cart{
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+#img-cart:hover{
+    color: rgba(0, 0, 0, .7);
+}
+
+.hero-content {
+    margin-top: 80px;
+    color: white;
+}
+.hero-content form {
+    position: relative;
+    margin-bottom: 0;
+}
+.hero-content form #search-course {
+    height: 50px;
+    margin-bottom: 0;
+}
+.hero-content form .submit-search-course {
+    position: absolute;
+    right:0;
+    top:0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/mglass.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border:none;
+}
+#courses-list .row {
+    margin-bottom:20px;
+}
+.add-to-cart {
+    margin:10px 0;
+}
+.card {
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    background: white;
+}
+@media (min-width: 550px) {
+    .card {
+        text-align: left;
+    }
+}
+.info-card  {
+    padding: 10px 20px;
+}
+.info-card p,
+.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .price {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .price span {
+    font-weight: 700;
+    font-size: 22px;
+}
